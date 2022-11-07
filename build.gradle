@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+    id "org.jetbrains.kotlin.jvm" version "1.7.10"
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    google()
+    maven { url = 'https://repo.repsy.io/mvn/const/pow' }
+}
+
+dependencies {
+    implementation('org.powbot:client-sdk:1.0.10-SNAPSHOT')
+    implementation('org.powbot:client-sdk-loader:1.0.10-SNAPSHOT')
+    implementation('com.google.guava:guava:31.1-jre')
+}
